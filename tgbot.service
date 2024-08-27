@@ -1,0 +1,12 @@
+[Unit]
+Description=My TG Bot
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/Users/cholponklv/python/tg_deploy/venv/bin/python /Users/cholponklv/python/tg_deploy/main.py
+WorkingDirectory= /Users/cholponklv/python/tg_deploy
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
